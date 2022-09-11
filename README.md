@@ -1,7 +1,7 @@
 # coffee-shop-api
-<div align="left">
-  <img align="center" alt="Versions Icon" height="40" padding="2" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/version.png">
-  <h2>Version 0.1 being developed.</h2>
+<div align="left" display="flex" flexdirection="row">
+  <img align="center" alt="Versions Icon" height="32" padding="2" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/version.png">
+  <h3>Version 0.1 being developed.</h3>
 </div> <br>
   
 <div align="left">
