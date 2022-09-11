@@ -1,7 +1,9 @@
 # coffee-shop-api
-
-<img align="center" alt="Versions Icon" height="10" padding="2" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/version.png">
-Version 0.1 being developed. <br>
+<div align="left">
+  <img align="center" alt="Versions Icon" height="40" padding="2" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/version.png">
+  <h2>Version 0.1 being developed.</h2>
+</div> <br>
+  
 <div align="left">
   <img align="center" alt="Spring Boot" height="130" padding="10" src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg">
   <img align="center" alt="Java" height="95" padding="10" src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg">
