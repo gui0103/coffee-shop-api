@@ -1,4 +1,5 @@
 <h1 align="center">
+  <img align="center" alt="Coffee Icon" height="34" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/coffee-break.png">
   <b>Coffee Shop API</b>
   <img align="center" alt="Coffee Icon" height="34" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/coffee-break.png">
 </h1>
