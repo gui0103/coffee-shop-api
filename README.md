@@ -6,8 +6,8 @@
   <h3>Version 0.1 being developed.</h3>
 </div> <br>
 
-<a href="/LICENSE">
-        <img alt="GitHub" src="https://img.shields.io/github/license/devicons/devicon?color=%2360be86&style=for-the-badge">
+<a href="https://github.com/devicons/devicon/releases">
+        <img alt="GitHub release (latest by semver)" src="https://img.shields.io/github/v/release/devicons/devicon?color=%2360be86&label=Latest%20release&style=for-the-badge&sort=semver">
     </a>
   
 <div align="center">
