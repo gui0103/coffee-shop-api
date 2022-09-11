@@ -1,25 +1,18 @@
 package github.com.gui0103.coffeeshop.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.cassandra.core.mapping.Column;
-import org.springframework.data.cassandra.core.mapping.PrimaryKey;
-import org.springframework.data.cassandra.core.mapping.Table;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Table
+@Document("users")
 public class User {
 
-    @PrimaryKey
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID idUser;
 
     @NotBlank
@@ -37,17 +30,20 @@ public class User {
     @DecimalMin("0.00")
     private Double money;
 
+    private LocalDateTime creationDate;
+
     public User(String email, String password, String name) {
         this.email = email;
         this.password = password;
         this.name = name;
         this.money = 0.00;
+        this.creationDate = LocalDateTime.now();
     }
 
     public UUID getIdUser() {
         return idUser;
     }
-    
+
     public String getEmail() {
         return email;
     }
