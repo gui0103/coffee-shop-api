@@ -6,7 +6,9 @@
   <h3>Version 0.1 being developed.</h3>
 </div> <br>
 
-[![Build Status](https://img.shields.io/travis/kickscondor/markdown-it-div/master.svg?style=flat)](https://travis-ci.org/kickscondor/markdown-it-div)
+<a href="/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/devicons/devicon?color=%2360be86&style=for-the-badge">
+    </a>
   
 <div align="center">
   <img align="center" alt="Spring Boot" height="130" padding="10" src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg">
