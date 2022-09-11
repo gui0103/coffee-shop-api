@@ -5,6 +5,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
@@ -12,6 +13,9 @@ import java.util.UUID;
 
 @Document("users")
 public class User {
+
+    @Id
+    private String id;
 
     @NotBlank
     @Email
@@ -38,6 +42,14 @@ public class User {
         this.creationDate = LocalDateTime.now();
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public LocalDateTime getCreationDate() {
+        return creationDate;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -60,11 +72,6 @@ public class User {
 
     public void setMoney(Double money) {
         this.money = money;
-    }
-
-    // Needing more security
-    public String getPassword() {
-        return password;
     }
 
     public void setPassword(String password) {
