@@ -15,5 +15,5 @@
 </div> <br> <br> <br> <br>
 
 <div align="center">
-  <img align="center" alt="Coffee Icon" height="500" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/CoffeeShop.jpeg">
+  <img align="center" alt="Coffee Icon" width="90%" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/CoffeeShop.jpeg">
 </div>
