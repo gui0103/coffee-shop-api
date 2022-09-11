@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/users")
@@ -22,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping("/{idUser}")
-    public Optional<User> findUserById(@PathVariable UUID idUser) {
+    public Optional<User> findUserById(@PathVariable String idUser) {
         return userRepository.findById(idUser);
     }
 

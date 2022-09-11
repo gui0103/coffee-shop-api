@@ -9,8 +9,6 @@ import java.util.UUID;
 @Document
 public class Coffee {
 
-    private UUID idCoffee;
-
     @NotBlank
     @Size(min = 2, max = 100)
     private String name;

@@ -13,8 +13,6 @@ import java.util.UUID;
 @Document("users")
 public class User {
 
-    private UUID idUser;
-
     @NotBlank
     @Email
     private String email;
@@ -38,10 +36,6 @@ public class User {
         this.name = name;
         this.money = 0.00;
         this.creationDate = LocalDateTime.now();
-    }
-
-    public UUID getIdUser() {
-        return idUser;
     }
 
     public String getEmail() {
