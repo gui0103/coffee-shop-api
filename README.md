@@ -1,6 +1,6 @@
 <h1 align="center">
-  <b align="center">Coffee Shop API</b>
-  <img align="center" alt="Coffee Icon" height="24" padding="2" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/coffee-break.png">
+  <b>Coffee Shop API</b>
+  <img align="center" alt="Coffee Icon" height="24" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/coffee-break.png">
 </h1>
 <div align="center">
   <h3>This API is not complete yet, I'm working on it.</h3>
