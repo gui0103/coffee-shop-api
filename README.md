@@ -12,8 +12,8 @@
 
 <div align="center">
   <h3>This API is not complete yet, I'm working on it.</h3>
-</div>
+</div> <br> <br> <br> <br>
 
 <div align="center">
-  <img align="center" alt="Coffee Icon" height="300" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/CoffeeShop.jpeg">
+  <img align="center" alt="Coffee Icon" height="500" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/CoffeeShop.jpeg">
 </div>
