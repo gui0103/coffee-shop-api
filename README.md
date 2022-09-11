@@ -5,10 +5,6 @@
   <img align="center" alt="Versions Icon" height="32" padding="2" src="https://github.com/gui0103/coffee-shop-api/blob/main/images/version.png">
   <h3>Version 0.1 being developed.</h3>
 </div> <br>
-
-<a href="https://github.com/devicons/devicon/releases">
-        <img alt="GitHub release (latest by semver)" src="https://img.shields.io/github/v/release/devicons/devicon?color=%2360be86&label=Latest%20release&style=for-the-badge&sort=semver">
-    </a>
   
 <div align="center">
   <img align="center" alt="Spring Boot" height="130" padding="10" src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg">
