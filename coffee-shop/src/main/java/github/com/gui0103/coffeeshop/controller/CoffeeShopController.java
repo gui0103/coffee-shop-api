@@ -1,11 +1,14 @@
 package github.com.gui0103.coffeeshop.controller;
 
+import com.mongodb.client.result.UpdateResult;
 import github.com.gui0103.coffeeshop.entity.Coffee;
 import github.com.gui0103.coffeeshop.entity.CoffeeShop;
 import github.com.gui0103.coffeeshop.repository.CoffeeShopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -54,7 +57,11 @@ public class CoffeeShopController {
     @PatchMapping("/addCoffee/{id}")
     public List<Coffee> addNewCoffee(@RequestBody Coffee coffee, @PathVariable String id) {
         List<Coffee> coffeeList = findCoffeeListByID(id);
+        Optional<CoffeeShop> coffeeShop = findCoffeeShopById(id);
         coffeeList.add(coffee);
+
+        Query query = new Query().addCriteria(Criteria.where("_id").is(coffeeShop.get().getId()));
+        Update updateDefinition = new Update().set("coffeeList", coffeeShop.get().getCoffeeList());
         return coffeeList;
     }
 }
