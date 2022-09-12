@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
+import java.util.List;
 
 @Document("coffeeShops")
 public class CoffeeShop {
@@ -36,6 +36,8 @@ public class CoffeeShop {
 
     @NotBlank
     private String location;
+
+    private List<Coffee> coffeeList;
 
     public CoffeeShop(String email, String password, String name, String location) {
         this.email = email;
@@ -88,5 +90,13 @@ public class CoffeeShop {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public List<Coffee> getCoffeeList() {
+        return coffeeList;
+    }
+
+    public void setCoffeeList(List<Coffee> coffeeList) {
+        this.coffeeList = coffeeList;
     }
 }

@@ -10,9 +10,6 @@ import java.util.UUID;
 @Document
 public class Coffee {
 
-    @Id
-    private String id;
-
     @NotBlank
     @Size(min = 2, max = 100)
     private String name;
@@ -20,16 +17,9 @@ public class Coffee {
     @DecimalMin("0.00")
     private Double price;
 
-    @NotNull
-    private Integer quantityInStock;
-
     public Coffee(String name, Double price) {
         this.name = name;
         this.price = price;
-    }
-
-    public String getId() {
-        return id;
     }
 
     public String getName() {
@@ -46,13 +36,5 @@ public class Coffee {
 
     public void setPrice(Double price) {
         this.price = price;
-    }
-
-    public Integer getQuantityInStock() {
-        return quantityInStock;
-    }
-
-    public void setQuantityInStock(Integer quantityInStock) {
-        this.quantityInStock = quantityInStock;
     }
 }
