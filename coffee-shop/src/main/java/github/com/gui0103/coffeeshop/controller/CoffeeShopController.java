@@ -5,6 +5,7 @@ import github.com.gui0103.coffeeshop.entity.Coffee;
 import github.com.gui0103.coffeeshop.entity.CoffeeShop;
 import github.com.gui0103.coffeeshop.repository.CoffeeShopRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.ExecutableUpdateOperation;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -24,6 +25,9 @@ public class CoffeeShopController {
 
     @Autowired
     private CoffeeController coffeeController;
+
+    @Autowired
+    private MongoTemplate mongoTemplate;
 
     @GetMapping
     public List<CoffeeShop> findAllCoffeeShops() {
@@ -61,7 +65,9 @@ public class CoffeeShopController {
         coffeeList.add(coffee);
 
         Query query = new Query().addCriteria(Criteria.where("_id").is(coffeeShop.get().getId()));
-        Update updateDefinition = new Update().set("coffeeList", coffeeShop.get().getCoffeeList());
+        Update updateDefinition = new Update().set("coffeeList", coffeeList);
+
+        UpdateResult updateResult = mongoTemplate.upsert(query, updateDefinition, CoffeeShop.class);
         return coffeeList;
     }
 }
