@@ -5,6 +5,7 @@ import github.com.gui0103.coffeeshop.entity.Coffee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +27,7 @@ public class CoffeeController {
     }
 
     @PostMapping
-    public void createCoffee(@RequestBody Coffee coffee) {
+    public void createCoffee(@Valid @RequestBody Coffee coffee) {
         coffeeRepository.save(coffee);
     }
 }

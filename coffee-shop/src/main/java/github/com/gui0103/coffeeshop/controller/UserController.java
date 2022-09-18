@@ -5,6 +5,7 @@ import github.com.gui0103.coffeeshop.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +27,7 @@ public class UserController {
     }
 
     @PostMapping
-    public void createUser(@RequestBody User user) {
+    public void createUser(@Valid @RequestBody User user) {
         userRepository.save(user);
     }
 }
