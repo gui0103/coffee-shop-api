@@ -66,9 +66,11 @@ public class CoffeeShopController {
     }
 
     @PostMapping
-    public void createCoffeeShop(@Valid @RequestBody CoffeeShop coffeeShop) {
+    public ResponseEntity createCoffeeShop(@Valid @RequestBody CoffeeShop coffeeShop) {
 
         coffeeShopRepository.save(coffeeShop);
+
+        return status(201).build();
     }
 
     @PatchMapping("/addCoffee/{id}")
