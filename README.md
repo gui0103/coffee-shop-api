@@ -11,5 +11,5 @@
 </div>
 
 <div align="center">
-  <h3>This API is not complete yet, I'm working on it.</h3>
+  <h3>This API is not complete yet, I'm working on it :)</h3>
 </div>
