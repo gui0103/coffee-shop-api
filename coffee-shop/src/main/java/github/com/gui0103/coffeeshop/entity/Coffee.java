@@ -5,8 +5,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.*;
 
-import java.util.UUID;
-
 @Document
 public class Coffee {
 
